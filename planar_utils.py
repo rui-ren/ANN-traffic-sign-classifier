@@ -29,7 +29,7 @@ def plot_decision_boundary(model, X, Y):
     Z = Z.reshape(xx.shape)
     
     # Plot the contour and training examples
-    plt.contourf(xx, yy, Z, cmap = plt.cm.Spectral)
+    plt.contourf(xx, yy, Z, cmap = plt.cm.coolwarm)
     plt.ylabel('x2')
     plt.xlabel('x1')
     plt.scatter(X[0, :], X[1,:], c=Y.ravel(), cmap=plt.cm.Spectral)
