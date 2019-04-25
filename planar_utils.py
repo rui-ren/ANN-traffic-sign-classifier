@@ -24,6 +24,7 @@ def plot_decision_boundary(model, X, Y):
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
     
     # Predict the function value for the whole grid
+	# Concatenate into data points in the calculation
     Z = model(np.c_[xx.ravel(), yy.ravel()])
     Z = Z.reshape(xx.shape)
     
